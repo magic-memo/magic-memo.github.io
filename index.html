@@ -9,14 +9,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #eaf6ff; /* 淡蓝色背景 */
             color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #66b3ff; /* 淡蓝色头部背景 */
             color: white;
-            text-align: center;
-            padding: 20px 0;
+            display: flex;
+            align-items: center; /* 垂直居中对齐 */
+            padding: 20px 30px; /* 增加左右边距 */
+        }
+        header img {
+            width: 80px; /* Logo 图片宽度 */
+            height: auto;
+            margin-right: 20px; /* 右边距，保持 Logo 和文字之间的距离 */
         }
         header h1 {
             margin: 0;
@@ -26,11 +32,15 @@
             padding: 20px;
         }
         section h2 {
-            color: #4CAF50;
+            color: #66b3ff; /* 标题淡蓝色 */
         }
         .feature {
             display: flex;
             margin-bottom: 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .feature img {
             width: 150px;
@@ -47,23 +57,36 @@
             padding: 10px;
         }
         a {
-            color: #4CAF50;
+            color: #66b3ff;
         }
         .button {
-            background-color: #4CAF50;
+            background-color: #66b3ff;
             color: white;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
         }
+        .button:hover {
+            background-color: #4fa3d1; /* 鼠标悬停时的深蓝色 */
+        }
+        .contact-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>Welcome to MagicMemo</h1>
-        <p>Your AI-powered English Memorization Assistant</p>
+        <!-- 本地 Logo 图片 -->
+        <img src="images/icon.jpg" alt="MagicMemo Logo"> <!-- 替换为本地图片路径 -->
+        <h1>Welcome to MagicMemo APP</h1>
+        <p class="subtitle"><br>    Your AI-powered English Memorization Assistant</p>
     </header>
 
     <section>
@@ -75,7 +98,7 @@
         <h2>Key Features</h2>
 
         <div class="feature">
-            <img src="https://via.placeholder.com/150" alt="OCR Feature">
+            <img src="images/6.jpg" alt="OCR Feature">
             <div>
                 <h3>OCR Scanning & Sync Across Devices</h3>
                 <p>MagicMemo uses Optical Character Recognition (OCR) to scan text, and all your items will sync seamlessly across all your devices. This ensures you can access your memorization data wherever you are.</p>
@@ -83,7 +106,7 @@
         </div>
 
         <div class="feature">
-            <img src="https://via.placeholder.com/150" alt="Random Blank Feature">
+            <img src="images/3.jpg" alt="Random Blank Feature">
             <div>
                 <h3>Random Blank Features</h3>
                 <p>Fill in the blanks by spelling the correct word. MagicMemo also supports Fill-in-the-Blanks with word/form choice options, helping you memorize quickly and efficiently.</p>
@@ -91,7 +114,7 @@
         </div>
 
         <div class="feature">
-            <img src="https://via.placeholder.com/150" alt="AI Recitation Engine">
+            <img src="images/2.jpg" alt="AI Recitation Engine">
             <div>
                 <h3>AI Recitation Engine</h3>
                 <p>MagicMemo incorporates the latest Transformer speech neural network for recitation, providing a powerful tool for memorization and practice.</p>
@@ -99,7 +122,7 @@
         </div>
 
         <div class="feature">
-            <img src="https://via.placeholder.com/150" alt="Offline Support">
+            <img src="images/6.jpg" alt="Offline Support">
             <div>
                 <h3>Offline Functionality</h3>
                 <p>MagicMemo relies on Apple's powerful processor, allowing the app to work completely offline. No internet connection is required to enjoy all features of the app.</p>
@@ -110,6 +133,15 @@
     <section>
         <h2>Terms of Use</h2>
         <p>Please review our <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Use</a> for more information on how we operate.</p>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us!</p>
+        <ul>
+            <li>Email: <a href="mailto:1035396480@qq.com">1035396480@qq.com</a></li>
+            <li>WeChat: 18811445718</li>
+        </ul>
     </section>
 
     <footer>
