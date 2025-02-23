@@ -88,7 +88,6 @@
         <h1>Welcome to MagicMemo APP</h1>
         <p class="subtitle"><br>    Your AI-powered English Memorization Assistant</p>
     </header>
-
     <section>
         <h2>About MagicMemo</h2>
         <p>MagicMemo is an innovative app that uses advanced AI technology to assist in memorizing English texts. With various features powered by artificial intelligence, MagicMemo makes learning more effective and fun!</p>
@@ -142,8 +141,18 @@
             <li>Email: <a href="mailto:1035396480@qq.com">1035396480@qq.com</a></li>
             <li>WeChat: 18811445718</li>
         </ul>
+        <p><a href="?page_id=21">Privacy Policy</a></p>
     </section>
+    <script>
+        // 检查 URL 中是否有 ?page_id=21 参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const pageId = urlParams.get('page_id');
 
+        if (pageId === '21') {
+            // 跳转到隐私协议页面
+            window.location.href = "privacy-policy.html";  // 替换为实际隐私协议页面的路径
+        }
+    </script>
     <footer>
         <p>&copy; 2025 MagicMemo. All rights reserved.</p>
         <button class="button" onclick="window.location.href='https://www.apple.com/legal/internet-services/itunes/dev/stdeula/'">Learn More</button>
